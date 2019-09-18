@@ -213,6 +213,7 @@
 @media(max-width:768px) {
   .omoss-footer {
     width: 100%;
+    padding: 0;
   }
 }
 

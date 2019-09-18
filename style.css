@@ -1,0 +1,1064 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
+
+/* Banner STYLING =================================== */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+@media (max-width: 1280px) {
+  .slideshow-container {
+    display: none;
+  }
+}
+
+
+.banner {
+  width: 100%;
+}
+
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.568);
+}
+
+/* Text on slideshow */
+.textSlideshow {
+  background-color: rgba(73, 67, 67, 0.541);
+  color: #f2f2f2;
+  position: absolute;
+  width: 500px;
+  top: 150px;
+  left: 50px;
+  margin: 0;
+  padding: 20px;
+}
+
+.textSlideshow h1 {
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+.textSlideshow h4 {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: justify;
+  margin: 0;
+}
+
+/* Button on slideshow */
+
+.btnSlideshow {
+  border: 1px solid #fff;
+  height: 40px;
+  background-color: rgba(73, 67, 67, 0.541);
+  font-weight: 300;
+  font-size: 1em;
+  color: #fff;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -48px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 250ms ease all;
+}
+
+.btnSlideshow:hover {
+  background-color: rgba(73, 67, 67, 0.74);
+}
+
+.btnSlideshow:active {
+  margin-bottom: -1px;
+}
+
+/* The dots/bullets/indicators under slideshow */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation-poczytaj o tym!!!! */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.75s;
+  animation-name: fade;
+  animation-duration: 1.75s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* /// Banner STYLING =================================== */
+
+/* content STYLING =================================== */
+
+.content h3 {
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.content p {
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: 0;
+}
+
+.content h4 {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* Om oss STYLING =================================== */
+.hem {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+@media (max-width: 768px) {
+  .hem {
+    display: block;
+    padding: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+
+  }
+}
+
+.hemTitel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .hemTitel {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #bbbbbb;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-omoss {
+    display: none;
+  }
+}
+
+.hem h3 {
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .hem {
+    display: block;
+    padding: 0 20px;
+  }
+}
+
+.hemTxt {
+  display: flex;
+  width: 50%;
+  text-align: justify;
+  border-left: 1px solid #bbbbbb;
+}
+
+@media (max-width: 768px) {
+  .hemTxt {
+    display: block;
+    width: 100%;
+    text-align: justify;
+    border-left: none;
+  }
+}
+
+.hem p {
+  padding-left: 100px;
+}
+
+@media (max-width: 768px) {
+  .hem p {
+    padding: 0;
+    padding-top: 10px;
+  }
+}
+
+/* Våra tjänster STYLING =================================== */
+
+.vara-tjanster {
+  background-color: rgba(17, 123, 189, 0.11);
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .vara-tjanster {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    display: block;
+    justify-content: center;
+
+  }
+}
+
+.tjanster-titel {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .tjanster-titel {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.tjanster-titel h3 {
+  border-bottom: solid 1px #c4b2b2;
+  padding-bottom: 20px;
+}
+
+@media (max-width:768px) {
+  .tjanster-titel h3 {
+    padding-bottom: 10px;
+  }
+}
+
+.tjanster-container1,
+.tjanster-container2 {
+  display: flex;
+}
+
+@media (max-width:768px) {
+
+  .tjanster-container1,
+  .tjanster-container2 {
+    display: block;
+    justify-content: center;
+  }
+}
+
+.tjanster-container1 h4,
+.tjanster-container2 h4 {
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width:768px) {
+
+  .tjanster-container1 h4,
+  .tjanster-container2 h4 {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+.tjanster-container1 p,
+.tjanster-container2 p {
+  text-align: justify;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media (max-width:768px) {
+
+  .tjanster-container1 p,
+  .tjanster-container2 p {
+    text-align: justify;
+    padding: 0;
+    padding-top: 10px;
+
+  }
+}
+
+.tjanster-container2 {
+  padding-top: 100px;
+}
+
+@media(max-width:768px) {
+  .tjanster-container2 {
+    padding: 0px;
+  }
+}
+
+.tC1,
+.tC2,
+.tC3,
+.tC4 {
+  width: 50%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  .tC1,
+  .tC2,
+  .tC3,
+  .tC4 {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+
+.tC4 {
+  flex-direction: column;
+}
+
+/* Våra priser STYLING =================================== */
+.priser {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .priser {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    display: block;
+    justify-content: center;
+  }
+}
+
+.priser-title {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 786px) {
+  .priser-title {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.priser-title h3 {
+  border-bottom: solid 1px #c4b2b2;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 786px) {
+  .priser-title h3 {
+    padding-bottom: 10px;
+  }
+}
+
+.priser-table {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 786px) {
+  .priser-table {
+    padding: 0;
+  }
+}
+
+table.pt {
+  width: 500px;
+  border-collapse: collapse;
+}
+
+table.pt td,
+th {
+  border-bottom: 1px solid rgba(17, 123, 189, 0.11);
+  text-align: left;
+  padding: 10px;
+}
+
+table.pt th {
+  border-bottom: 3px solid rgba(17, 123, 189, 0.11);
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+table.pt caption {
+  color: rgb(12, 103, 160);
+  font-weight: 400;
+  font-size: 1.2em;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 786px) {
+  table.pt caption {
+    padding-bottom: 10px;
+  }
+}
+
+.priser-example {
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-around;
+}
+
+@media (max-width: 786px) {
+  .priser-example {
+    display: block;
+  }
+}
+
+@media (max-width: 786px) {
+  .priser-example2 {
+    padding-top: 20px;
+  }
+}
+
+.priser-example h4 {
+  padding-bottom: 10px;
+}
+
+.priser-example p {
+  padding: 5px;
+}
+
+/* Offertförfrågan STYLING =================================== */
+
+.offert-container {
+  background-color: rgba(17, 123, 189, 0.11);
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .offert-container {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    display: block;
+    justify-content: center;
+  }
+}
+
+.offert-titel {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 786px) {
+  .offert-titel {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.offert-titel h3 {
+  border-bottom: solid 1px #c4b2b2;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 786px) {
+  .offert-titel h3 {
+    padding-bottom: 10px;
+  }
+}
+
+.offert-headline {
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 20px;
+}
+
+@media(max-width: 768px) {
+  .offert-headline {
+    padding-bottom: 10px;
+  }
+}
+
+@media(max-width: 768px) {
+  .img-offert {
+    display: none;
+  }
+}
+
+.offert-headline img {
+  padding-right: 20px;
+}
+
+.quote-container {
+  background-color: #fff;
+  padding: 50px;
+}
+
+@media(max-width: 768px) {
+  .quote-container {
+    padding: 10px;
+  }
+}
+
+.quote-container h5 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.3em;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+@media(max-width: 768px) {
+  .quote-container h5 {
+    padding-top: 10px;
+  }
+}
+
+
+
+.q1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.q1a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  background-color: rgba(17, 123, 189, 0.03);
+  margin-bottom: 10px;
+  user-select: none;
+}
+
+/* Kontaktuppgifter i offertförfrågan STYLING =================================== */
+.q1a p {
+  font-size: 1em;
+}
+
+.q1b {
+  display: none;
+}
+
+input {
+  outline: none;
+  resize: none;
+}
+
+input:focus {
+  border: 0.5px solid rgba(17, 123, 189);
+}
+
+.t-a,
+.t-a1 {
+  border: 0.5px solid #c4b2b2;
+  outline: none;
+  resize: none;
+  width: 100%;
+  padding: 10px;
+  font-family: inherit;
+}
+
+textarea,
+input {
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  border-color: rgba(17, 123, 189);
+}
+
+.container-kontaktuppgifter {
+  display: flex;
+}
+
+@media(max-width:768px) {
+  .container-kontaktuppgifter {
+    display: block;
+  }
+}
+
+.q1-kontakt1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 0px;
+  padding-right: 25px;
+}
+
+.q2-kontakt1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 25px;
+  padding-right: 0px;
+}
+
+@media(max-width:768px) {
+
+  .q1-kontakt1,
+  .q2-kontakt1 {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.q1-kontakt1 p,
+.q2-kontakt1 p {
+  font-size: 1em;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+@media(max-width:768px) {
+
+  .q1-kontakt1 p,
+  .q2-kontakt1 p {
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+}
+
+
+
+
+/* Skicka offertförfrågan i offertförfrågan STYLING =================================== */
+.btn-submit {
+  width: 100%;
+  background-color: rgba(17, 123, 189);
+  font-size: 1.2em;
+  color: white;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 50px;
+  font-weight: 300;
+}
+
+@media(max-width:768px) {
+  .btn-submit {
+    margin-top: 25px;
+  }
+}
+
+/* Referenser STYLING =================================== */
+.referenser-container {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .referenser-container {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    display: block;
+    justify-content: center;
+  }
+}
+
+
+.referenser-title {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 786px) {
+  .referenser-title {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.referenser-title h3 {
+  border-bottom: solid 1px #c4b2b2;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 786px) {
+  .referenser-title h3 {
+    padding-bottom: 10px;
+  }
+}
+
+.referenser-container1,
+.referenser-container2 {
+  display: flex;
+}
+
+@media (max-width: 786px) {
+
+  .referenser-container1,
+  .referenser-container2 {
+    display: block;
+  }
+}
+
+.referenser-container1 h4,
+.referenser-container2 h4 {
+  text-align: center;
+  padding: 10px;
+}
+
+@media(max-width:768px) {
+
+  .referenser-container1 h4,
+  .referenser-container2 h4 {
+    padding: 0;
+  }
+}
+
+.referenser-container1 p,
+.referenser-container2 p {
+  text-align: justify;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media(max-width:768px) {
+
+  .referenser-container1 p,
+  .referenser-container2 p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.referenser-container2 {
+  padding-top: 100px;
+}
+
+@media(max-width:768px) {
+  .referenser-container2 {
+    padding-top: 0;
+  }
+}
+
+.referenser-box {
+  width: 50%;
+  text-align: center;
+}
+
+@media (max-width: 786px) {
+  .referenser-box {
+    width: 100%;
+  }
+}
+
+.referenser-box2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.referenser-box2 h5 {
+  font-weight: 400;
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+  padding: 50px;
+}
+
+@media(max-width:768px) {
+  .referenser-box2 h5 {
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+.textarea-referenser {
+  padding-top: 25px;
+
+}
+
+.btn-submit-referens {
+  width: 100%;
+  background-color: rgba(17, 123, 189);
+  font-size: 1.2em;
+  color: white;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  font-weight: 300;
+}
+
+/* Kontaka oss STYLING =================================== */
+
+.kontakt-container {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(17, 123, 189, 0.11);
+}
+
+@media (max-width: 768px) {
+  .kontakt-container {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    display: block;
+    justify-content: center;
+  }
+}
+
+
+.kontakt-title {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 786px) {
+  .kontakt-title {
+    padding-bottom: 0;
+  }
+}
+
+.kontakt-title h3 {
+  border-bottom: solid 1px #c4b2b2;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 786px) {
+  .kontakt-title h3 {
+    padding-bottom: 10px;
+  }
+}
+
+.kontakt-title p {
+  padding-top: 20px;
+}
+
+@media (max-width: 786px) {
+  .kontakt-title p {
+    text-align: justify;
+  }
+}
+
+.kontakt-container1 {
+  display: flex;
+}
+
+@media (max-width: 786px) {
+  .kontakt-container1 {
+    display: block;
+    justify-content: center;
+  }
+
+}
+
+
+.kontakt-container1 h4 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+@media (max-width: 786px) {
+  .kontakt-container1 h4 {
+    padding: 0;
+  }
+}
+
+.kontakt-container1 p {
+  text-align: left;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.kontakt-box {
+  width: 50%;
+  text-align: center;
+}
+
+
+@media (max-width: 786px) {
+  .kontakt-box {
+    width: 100%;
+  }
+}
+
+
+.kontakt-box1 h4 {
+  padding-top: 2px;
+}
+
+.img25 {
+  display: none;
+}
+
+@media(max-width: 768px) {
+  .img25 {
+    display: initial;
+    padding-top: 20px;
+  }
+}
+
+@media(max-width: 768px) {
+  .img50 {
+    display: none;
+  }
+}
+
+/* Kontaka oss - mejl  STYLING =================================== */
+
+.kontakt-container2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.kontakt-titel2 {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+@media(max-width: 768px) {
+  .kontakt-titel2 {
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+}
+
+.kontakt-titel2 h4 {
+  font-weight: 400;
+}
+
+.div-kontakt1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.div-kontakt1 p {
+  padding: 5px;
+}
+
+.div-kontakt-detaljer {
+  display: flex;
+  flex-direction: row;
+}
+
+.div-ta-email {
+  padding-top: 50px;
+}
+
+@media (max-width: 786px) {
+  .div-ta-email {
+    padding-top: 25px;
+  }
+}
+
+.btn-submit-email {
+  width: 100%;
+  background-color: rgba(17, 123, 189);
+  font-size: 1.2em;
+  color: white;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 50px;
+  font-weight: 300;
+}
+
+@media (max-width: 786px) {
+  .btn-submit-email {
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

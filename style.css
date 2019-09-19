@@ -650,9 +650,12 @@ input:focus {
 
 /* usuwanie koloru zoltego z input */
 
-input:-webkit-autofill:focus {
-  border-color: #66afe9;
-  -webkit-box-shadow: inset 0 0 0px 9999px white, 0 0 8px rgba(102, 175, 233, 0.6);
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
 }
 
 .t-a,

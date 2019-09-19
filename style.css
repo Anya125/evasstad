@@ -654,8 +654,7 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  transition: background-color 5000s ease-in-out 0s;
-  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
 }
 
 .t-a,
@@ -994,6 +993,15 @@ textarea:focus {
   width: 50%;
   text-align: center;
 }
+
+.kontakt-box a {
+  text-decoration: none;
+}
+
+.kontakt-box h4 {
+  text-decoration: none;
+}
+
 
 
 @media (max-width: 786px) {

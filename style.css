@@ -446,6 +446,12 @@ table.pt {
   border-collapse: collapse;
 }
 
+@media (max-width:768px) {
+  table.pt {
+    width: 100%;
+  }
+}
+
 table.pt td,
 th {
   border-bottom: 1px solid rgba(17, 123, 189, 0.11);

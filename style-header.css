@@ -125,6 +125,13 @@ body {
   }
 }
 
+@media(max-width:768px) {
+  .grey-border-bottom {
+    border-bottom: 1px solid #bbbbbb;
+  }
+}
+
+
 
 @media(max-width:768px) {
   .menu-container ul {

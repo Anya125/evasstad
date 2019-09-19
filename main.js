@@ -125,7 +125,6 @@ function yesnoCheck() {
 
 //Funkcja do hamburgera
 function myFunction() {
-
   var x = document.getElementById("menu-container-mobile");
   if (x.style.display === "flex") {
     x.style.display = "none";

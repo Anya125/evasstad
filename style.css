@@ -994,12 +994,10 @@ textarea:focus {
   text-align: center;
 }
 
-.kontakt-box a {
+.kontakt-box a,
+h4 {
   text-decoration: none;
-}
-
-.kontakt-box h4 {
-  text-decoration: none;
+  color: black;
 }
 
 

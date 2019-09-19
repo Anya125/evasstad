@@ -60,11 +60,6 @@
   }
 }
 
-input {
-  font-size: 16px;
-}
-
-
 .inputbutton-footer1 {
   display: flex;
   justify-content: center;
@@ -89,6 +84,12 @@ input {
   padding-bottom: 0;
   padding-right: 0;
   color: #fff;
+}
+
+@media (max-width:168px) {
+  input {
+    font-size: 16px;
+  }
 }
 
 .nyfikeninput::placeholder {

@@ -87,7 +87,7 @@
 }
 
 @media (max-width:768px) {
-  input {
+  .nyfikeninput {
     font-size: 16px;
   }
 }

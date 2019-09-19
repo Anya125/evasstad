@@ -621,6 +621,13 @@ input {
   resize: none;
 }
 
+/* usuwanie strzalek z input:number */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 input:focus {
   border: 0.5px solid rgba(17, 123, 189);
 }

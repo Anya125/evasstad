@@ -635,6 +635,8 @@ input {
   }
 }
 
+
+
 /* usuwanie strzalek z input:number */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -644,6 +646,11 @@ input[type=number]::-webkit-outer-spin-button {
 
 input:focus {
   border: 0.5px solid rgba(17, 123, 189);
+}
+
+input:-webkit-autofill:focus {
+  border-color: #66afe9;
+  -webkit-box-shadow: inset 0 0 0px 9999px white, 0 0 8px rgba(102, 175, 233, 0.6);
 }
 
 .t-a,

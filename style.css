@@ -627,6 +627,12 @@ input {
   resize: none;
 }
 
+@media (max-width:768px) {
+  input {
+    font-size: 16px;
+  }
+}
+
 /* usuwanie strzalek z input:number */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {

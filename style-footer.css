@@ -86,11 +86,7 @@
   color: #fff;
 }
 
-@media (max-width:768px) {
-  .nyfikeninput {
-    font-size: 16px;
-  }
-}
+
 
 .nyfikeninput::placeholder {
   color: #fff;
@@ -154,6 +150,15 @@
 .nyfikenbutton:focus {
   background-color: rgba(17, 123, 189);
   color: #fff;
+}
+
+@media (max-width:768px) {
+
+  .nyfikeninput,
+  .nyfikenbutton {
+    font-size: 16px;
+    font: -webkit-control;
+  }
 }
 
 /* /// FOOOTER 1 STYLING =================================== */

@@ -84,6 +84,7 @@
   padding-bottom: 0;
   padding-right: 0;
   color: #fff;
+  transition: 500ms background-color;
 }
 
 
@@ -96,7 +97,6 @@
 .nyfikeninput:hover {
   background-color: #fff;
   background-image: url(icon/phoneblue.png);
-  transition: 500ms background-color;
   color: rgb(17, 123, 189);
   border: 2px solid #fff;
   border-radius: 4px 0px 0px 4px;
@@ -139,11 +139,11 @@
   outline: none;
   padding: 0;
   cursor: pointer;
+  transition: 500ms background-color;
 }
 
 .nyfikenbutton:hover {
   background-color: #fff;
-  transition: 500ms background-color;
   color: rgb(17, 123, 189);
 }
 
@@ -153,7 +153,6 @@
 }
 
 @media (max-width:768px) {
-
   .nyfikeninput,
   .nyfikenbutton {
     font-size: 16px;

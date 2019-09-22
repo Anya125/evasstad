@@ -1,10 +1,19 @@
 // Text skickat after you pressed the nyfikenbutton
 var node = document.getElementsByClassName("nyfikenbutton")[0];
 
-node.onclick = function () {
-  document.getElementById("nyfikenInputTelefon").value = "";
+let url = new URL(window.location.href);
+let telephoneNumberSent = url.searchParams.get("telephone_number_sent");
+let contactFormSent = url.searchParams.get("contact_form_sent");
+let ofertRequestSent = url.searchParams.get("ofert_request_sent");
+let referenceSent = url.searchParams.get("reference_sent");
+
+if(telephoneNumberSent) {
   node.innerHTML = "Skickat!";
-};
+}
+// node.onclick = function () {
+//   document.getElementById("nyfikenInputTelefon").value = "";
+//   node.innerHTML = "Skickat!";
+// };
 
 node.onmouseout = function () {
   node.innerHTML = "Skicka";
@@ -13,9 +22,13 @@ node.onmouseout = function () {
 // Text skickat after you pressed the Skicka offertförfrågan btn
 var node2 = document.getElementsByClassName("btn-submit")[0];
 
-node2.onclick = function () {
+if(ofertRequestSent) {
   node2.innerHTML = "Offertförfrågan skickat! Vi återkommer inom kort.";
-};
+}
+
+// node2.onclick = function () {
+//   node2.innerHTML = "Offertförfrågan skickat! Vi återkommer inom kort.";
+// };
 
 node2.onmouseout = function () {
   node2.innerHTML = "Skicka offertförfrågan";
@@ -24,9 +37,13 @@ node2.onmouseout = function () {
 // Text skickat after you pressed the Skicka email btn
 var node3 = document.getElementsByClassName("btn-submit-email")[0];
 
-node3.onclick = function () {
+if(contactFormSent) {
   node3.innerHTML = "Tack för att du kontaktar oss!";
-};
+}
+
+// node3.onclick = function () {
+//   node3.innerHTML = "Tack för att du kontaktar oss!";
+// };
 
 node3.onmouseout = function () {
   node3.innerHTML = "Skicka";
@@ -34,10 +51,13 @@ node3.onmouseout = function () {
 
 // Text skickat after you pressed the Skicka referns
 var node4 = document.getElementsByClassName("btn-submit-referens")[0];
-
-node4.onclick = function () {
+if(referenceSent) {
   node4.innerHTML = "Tack för dina referenser!";
-};
+}
+
+// node4.onclick = function () {
+//   node4.innerHTML = "Tack för dina referenser!";
+// };
 
 node4.onmouseout = function () {
   node4.innerHTML = "Skicka referenser";

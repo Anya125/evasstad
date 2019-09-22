@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
     <title>Evas Städ AB</title>
     <meta charset="utf-8">
@@ -14,7 +13,6 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style-header.css" />
     <link rel="stylesheet" href="style-footer.css" />
-
 </head>
 
 <body>
@@ -235,155 +233,151 @@
             </div>
 
             <div class="quote-container">
+                <form action="//api.evasstad.se/ask_for_ofert" method="POST">
 
-                <div class="offert-headline">
-                    <img src="icon/exam-35.png" class="img-offert">
-                    <h4>Berätta för oss om dina behov</h4>
-                </div>
-
-                <div class="q1">
-                    <h5> Typ av städtjänst:</h5>
-                    <div class="q1a">
-                        <input type="radio" name="stadtjanst" value="lopande" id="yesCheck"
-                            onclick="javascript:yesnoCheck();">
-                        <p>Löpande hemstädning</p>
-                    </div>
-                    <div class="q1a">
-                        <input type="radio" name="stadtjanst" value="ett" onclick="javascript:yesnoCheck();">
-                        <p>Ett städtilfälle</p>
-                    </div>
-                </div>
-
-
-                <div class="q1b" id="ifYes" onclick="javascript:yesnoCheck();">
-                    <h5> Hur ofta skall vi städa:</h5>
-                    <div class="q1a">
-                        <input type="radio" name="frekvens" value="engang">
-                        <p>En gång i veckan</p>
-                    </div>
-                    <div class="q1a">
-                        <input type="radio" name="frekvens" value="varannan">
-                        <p>Varannan vecka</p>
-                    </div>
-                    <div class="q1a">
-                        <input type="radio" name="frekvens" value="vartredje">
-                        <p>Var tredje vecka</p>
-                    </div>
-                    <div class="q1a">
-                        <input type="radio" name="frekvens" value="manad">
-                        <p>En gång i månaden</p>
-                    </div>
-                    <div class="q1a">
-                        <input type="radio" name="frekvens" value="annat">
-                        <p>Annat</p>
-                    </div>
-                </div>
-
-
-                <div class="q1">
-                    <h5> Bostadstyp:</h5>
-                    <div class="q1a">
-                        <input type="radio" name="bostadstyp" value="lgh">
-                        <p>Lagenhet</p>
-                    </div>
-                    <div class="q1a">
-                        <input type="radio" name="bostadstyp" value="villa">
-                        <p>Villa</p>
-                    </div>
-                    <div class="q1a">
-                        <input type="radio" name="bostadstyp" value="radhus">
-                        <p>Radhus</p>
-                    </div>
-                    <div class="q1a">
-                        <input type="radio" name="bostadstyp" value="fritidshus">
-                        <p>Fritidshus</p>
-                    </div>
-                    <div class="q1a">
-                        <input type="radio" name="bostadstyp" value="annat">
-                        <p>Annat</p>
-                    </div>
-                </div>
-
-                <div class="q1">
-                    <h5> Hur många kvadratmeter skall vi städa:</h5>
-                    <div class="q1a">
-                        <input type="tel" name="kvm">
-                        <p>kvm</p>
-                    </div>
-                </div>
-                <div class="q1">
-                    <h5> Har du husdjur i bostaden?</h5>
-                    <div class="q1a">
-                        <input type="radio" name="djur" value="ja">
-                        <p>Ja</p>
-                    </div>
-                    <div class="q1a">
-                        <input type="radio" name="djur" value="nej">
-                        <p>Nej</p>
-                    </div>
-                </div>
-                <div class="q1">
-                    <h5> Tillägstjänster:</h5>
-                    <div class="q1a">
-                        <input type="checkbox" name="tillag" value="tvätt">
-                        <p>Strykning</p>
-                    </div>
-                    <div class="q1a">
-                        <input type="checkbox" name="tillag" value="stryk">
-                        <p>Byte av sängkläder</p>
-                    </div>
-                    <div class="q1a">
-                        <input type="checkbox" name="tillag" value="byte">
-                        <p>Växter vattning</p>
-                    </div>
-                    <div class="q1a">
-                        <input type="checkbox" name="tillag" value="plocka">
-                        <p>Undanplockning av saker</p>
-                    </div>
-                    <div class="q1a">
-                        <input type="checkbox" name="tillag" value="annat">
-                        <p>Annat</p>
+                    <div class="offert-headline">
+                        <img src="icon/exam-35.png" class="img-offert">
+                        <h4>Berätta för oss om dina behov</h4>
                     </div>
 
-
-                </div>
-
-                <div class="q1">
-                    <h5> Övrig information:</h5>
-                    <div>
-                        <textarea name="annat" placeholder="Meddelande" rows="10" class="t-a"></textarea>
+                    <div class="q1">
+                        <h5> Typ av städtjänst:</h5>
+                        <div class="q1a">
+                            <input type="radio" name="cleaning_type" value="lopande" id="yesCheck"
+                                onclick="javascript:yesnoCheck();">
+                            <p>Löpande hemstädning</p>
+                        </div>
+                        <div class="q1a">
+                            <input type="radio" name="cleaning_type" value="ett" onclick="javascript:yesnoCheck();">
+                            <p>Ett städtilfälle</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="q1">
-                    <h5> Kontaktuppgifter</h5>
+                    <div class="q1b" id="ifYes" onclick="javascript:yesnoCheck();">
+                        <h5>Hur ofta skall vi städa:</h5>
+                        <div class="q1a">
+                            <input type="radio" name="how_often" value="engang">
+                            <p>En gång i veckan</p>
+                        </div>
+                        <div class="q1a">
+                            <input type="radio" name="how_often" value="varannan">
+                            <p>Varannan vecka</p>
+                        </div>
+                        <div class="q1a">
+                            <input type="radio" name="how_often" value="vartredje">
+                            <p>Var tredje vecka</p>
+                        </div>
+                        <div class="q1a">
+                            <input type="radio" name="how_often" value="manad">
+                            <p>En gång i månaden</p>
+                        </div>
+                        <div class="q1a">
+                            <input type="radio" name="how_often" value="annat">
+                            <p>Annat</p>
+                        </div>
+                    </div>
 
-                    <form action="" method="">
+                    <div class="q1">
+                        <h5> Bostadstyp:</h5>
+                        <div class="q1a">
+                            <input type="radio" name="apartment_type" value="lgh">
+                            <p>Lagenhet</p>
+                        </div>
+                        <div class="q1a">
+                            <input type="radio" name="apartment_type" value="villa">
+                            <p>Villa</p>
+                        </div>
+                        <div class="q1a">
+                            <input type="radio" name="apartment_type" value="radhus">
+                            <p>Radhus</p>
+                        </div>
+                        <div class="q1a">
+                            <input type="radio" name="apartment_type" value="fritidshus">
+                            <p>Fritidshus</p>
+                        </div>
+                        <div class="q1a">
+                            <input type="radio" name="apartment_type" value="annat">
+                            <p>Annat</p>
+                        </div>
+                    </div>
+
+                    <div class="q1">
+                        <h5> Hur många kvadratmeter skall vi städa:</h5>
+                        <div class="q1a">
+                            <input name="square_meters" type="tel">
+                            <p>kvm</p>
+                        </div>
+                    </div>
+
+                    <div class="q1">
+                        <h5> Har du husdjur i bostaden?</h5>
+                        <div class="q1a">
+                            <input name="animals" type="radio" value="ja">
+                            <p>Ja</p>
+                        </div>
+                        <div class="q1a">
+                            <input name="animals" type="radio" value="nej">
+                            <p>Nej</p>
+                        </div>
+                    </div>
+
+                    <div class="q1">
+                        <h5> Tillägstjänster:</h5>
+                        <div class="q1a">
+                            <input name="extra_laundry" type="checkbox" value="true">
+                            <p>Strykning</p>
+                        </div>
+                        <div class="q1a">
+                            <input name="extra_sheets_change" type="checkbox" value="true">
+                            <p>Byte av sängkläder</p>
+                        </div>
+                        <div class="q1a">
+                            <input name="extra_plants_watering" type="checkbox" value="true">
+                            <p>Växter vattning</p>
+                        </div>
+                        <div class="q1a">
+                            <input name="extra_picking_objects_from_flor" type="checkbox" value="true">
+                            <p>Undanplockning av saker</p>
+                        </div>
+                        <div class="q1a">
+                            <input name="extra_others" type="checkbox" value="annat">
+                            <p>Annat</p>
+                        </div>
+                    </div>
+
+                    <div class="q1">
+                        <h5> Övrig information:</h5>
+                        <div>
+                            <textarea name="other_information" placeholder="Meddelande" rows="10" class="t-a"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="q1">
+                        <h5> Kontaktuppgifter</h5>
+
                         <div class="container-kontaktuppgifter">
                             <div class="q1-kontakt1">
                                 <p>Namn</p>
-                                <input name="namn" placeholder="John" type="text" class="t-a1" required></input>
+                                <input name="name" placeholder="John" type="text" class="t-a1" required></input>
 
                                 <p>Efternamn</p>
-                                <input name="namn" placeholder="Doe" type="text" class="t-a1"></input>
+                                <input name="surname" placeholder="Doe" type="text" class="t-a1"></input>
                             </div>
                             <div class="q2-kontakt1">
                                 <p>E-mail</p>
-                                <input name="namn" placeholder="john@gmail.com" type="email" class="t-a1"
+                                <input name="email" placeholder="john@gmail.com" type="email" class="t-a1"
                                     required></input>
 
                                 <p>Telefonnummer</p>
-                                <input name="namn" placeholder="123456789" type="tel" class="t-a1"></input>
+                                <input name="telephone_number" placeholder="123456789" type="tel" class="t-a1"></input>
                             </div>
                         </div>
                         <div class="q1-kontakt2">
-                            <button type="submit" class="btn-submit"> Skicka offertförfrågan </button>
+                            <button type="submit" class="btn-submit">Skicka offertförfrågan</button>
                         </div>
-                    </form>
-                </div>
+                    </div>
 
-
-
+                </form>
             </div>
         </div>
 
@@ -434,19 +428,19 @@
             <div class="referenser-box2">
                 <h5> Lägg till referenser</h5>
 
-                <form action="" method="">
+                <form action="//api.evasstad.se/add_reference" method="POST">
                     <div class="container-kontaktuppgifter">
                         <div class="q1-kontakt1">
                             <p>Namn</p>
-                            <input placeholder="John" class="t-a1" required></input>
+                            <input name="name" placeholder="John" class="t-a1" required></input>
                         </div>
                         <div class="q2-kontakt1">
                             <p>E-mail</p>
-                            <input type="email" placeholder="john@gmail.com" class="t-a1" required></input>
+                            <input name="email" type="email" placeholder="john@gmail.com" class="t-a1" required></input>
                         </div>
                     </div>
                     <div class="textarea-referenser">
-                        <textarea name="referenser" type="text" placeholder="Meddelande" rows="10" class="t-a"
+                        <textarea name="content" type="text" placeholder="Meddelande" rows="10" class="t-a"
                             required></textarea>
                     </div>
 
@@ -495,32 +489,32 @@
                     <h4>Mejla in din fråga!</h4>
                 </div>
 
-                <form action="" method="POST">
+                <form action="//api.evasstad.se/contact_form" method="POST">
                     <div class="container-kontaktuppgifter">
                         <div class="q1-kontakt1">
                             <p>Namn</p>
-                            <input placeholder="John" class="t-a1" required></input>
+                            <input name="name" placeholder="John" class="t-a1" required></input>
 
                             <p>Efternamn</p>
-                            <input placeholder="Doe" class="t-a1"></input>
+                            <input name="surname" placeholder="Doe" class="t-a1"></input>
                         </div>
 
                         <div class="q2-kontakt1">
                             <p>E-mail</p>
-                            <input type="email" placeholder="john@gmail.com" class="t-a1" required></input>
+                            <input name="email" type="email" placeholder="john@gmail.com" class="t-a1" required></input>
 
                             <p>Telefonnummer</p>
-                            <input type="tel" placeholder="123456789" class="t-a1" required></input>
+                            <input name="telephone_number" type="tel" placeholder="123456789" class="t-a1" required></input>
                         </div>
 
                     </div>
 
                     <div class="div-ta-email">
-                        <textarea placeholder="Meddelande" rows="10" class="t-a" required></textarea>
+                        <textarea name="message" placeholder="Meddelande" rows="10" class="t-a" required></textarea>
                     </div>
 
                     <div class="btn-kontakt">
-                        <button type="submit" class="btn-submit-email"> Skicka </button>
+                        <button type="submit" class="btn-submit-email">Skicka</button>
                     </div>
                 </form>
 
@@ -530,21 +524,23 @@
 
 
 
-        <div class="footer1-cointainer">
+        <div id="send_telephone_number" class="footer1-cointainer">
             <div class="footer1">
                 <div class="nyfiken">
                     <p class="bla1">Nyfiken?</p>
                     <p class="bla2">Lämna ditt nummer så ringer vi upp dig!</p>
                 </div>
-                <div class="inputbutton-footer1">
-                    <div class="input-footer1">
-                        <input type="tel" name="Telefonnummer" placeholder="Telefonnummer" class="nyfikeninput"
-                            id="nyfikenInputTelefon">
+                <form action="//api.evasstad.se/send_telephone_number" method="POST">
+                    <div class="inputbutton-footer1">
+                            <div class="input-footer1">
+                                <input type="tel" name="telephone_number" placeholder="Telefonnummer" class="nyfikeninput"
+                                    id="nyfikenInputTelefon">
+                            </div>
+                            <div class="button-footer1">
+                                <button type="submit" name="button-footer1" class="nyfikenbutton">Skicka</button>
+                            </div>
                     </div>
-                    <div class="button-footer1">
-                        <button type="submit" name="button-footer1" class="nyfikenbutton">Skicka</button>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
         <div class="footer-container">

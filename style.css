@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
 
 /* Banner STYLING =================================== */
+.section-width {
+  width: 100%
+}
+
 .slideshow-container {
   width: 1400px;
   position: relative;

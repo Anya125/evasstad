@@ -815,32 +815,30 @@ textarea:focus {
 .referenser-container1,
 .referenser-container2 {
   display: flex;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 786px) {
-
-  .referenser-container1,
-  .referenser-container2 {
+  .referenser-container1 {
     display: block;
+  }
+  .referenser-container1 .referenser-box {
+    margin-top: 50px;
   }
 }
 
-.referenser-container1 h4,
-.referenser-container2 h4 {
+.referenser-container1 h4 {
   text-align: center;
   padding: 10px;
 }
 
 @media(max-width:768px) {
-
-  .referenser-container1 h4,
-  .referenser-container2 h4 {
+  .referenser-container1 {
     padding: 0;
   }
 }
 
-.referenser-container1 p,
-.referenser-container2 p {
+.referenser-container1 p {
   text-align: justify;
   padding: 10px;
   padding-left: 25px;

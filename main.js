@@ -7,7 +7,7 @@ let contactFormSent = url.searchParams.get("contact_form_sent");
 let ofertRequestSent = url.searchParams.get("ofert_request_sent");
 let referenceSent = url.searchParams.get("reference_sent");
 
-fetch('http://api.evasstad.oo/get_references').then(function(response) {
+fetch('https://api.evasstad.se/get_references').then(function(response) {
   return response.json();
 }).then((response) => {
   let referencesContainer = document.getElementById('referencesContainer');

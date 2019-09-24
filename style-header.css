@@ -120,19 +120,11 @@ body {
     display: none;
     flex-direction: column;
     font-size: 1.2em;
-    border-bottom: 1px solid #bbbbbb;
+    border-bottom: 70px solid #fff;
     border-top: 1px solid #bbbbbb;
     padding-bottom: 25px;
   }
 }
-
-@media(max-width:768px) {
-  .grey-border-bottom {
-    border-bottom: 1px solid #bbbbbb;
-  }
-}
-
-
 
 @media(max-width:768px) {
   .menu-container ul {
@@ -145,6 +137,7 @@ body {
   .menu-container li {
     text-align: center;
     margin: 0;
-    padding: 25px;
+    padding: 20px;
+    border-bottom: 2px solid white;
   }
 }

@@ -2,7 +2,7 @@
 
 /* Banner STYLING =================================== */
 .slideshow-container {
-  width: 100%;
+  width: 1400px;
   position: relative;
   margin: auto;
   text-align: center;
@@ -159,6 +159,12 @@
 /* /// Banner STYLING =================================== */
 
 /* content STYLING =================================== */
+
+.content {
+  width: 1400px;
+  /* position: relative; */
+  margin: auto;
+}
 
 .content h3 {
   font-size: 2em;

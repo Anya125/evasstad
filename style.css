@@ -170,6 +170,12 @@
   margin: auto;
 }
 
+@media (max-width:768px) {
+  .content {
+    width: 100%
+  }
+}
+
 .content h3 {
   font-size: 2em;
   font-weight: 400;

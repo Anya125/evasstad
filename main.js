@@ -7,6 +7,20 @@ let contactFormSent = url.searchParams.get("contact_form_sent");
 let ofertRequestSent = url.searchParams.get("ofert_request_sent");
 let referenceSent = url.searchParams.get("reference_sent");
 
+fetch('https://api.evasstad.se/get_references').then(function(response) {
+  return response.json();
+}).then((response) => {
+  let referencesContainer = document.getElementById('referencesContainer');
+  response.forEach(element => {
+    let newDomElement = `<div class="referenser-box">
+                          <img src="icon/stars-50.png" class="img-stars">
+                          <h4>${element.name}</h4>
+                          <p>${element.content}</p>
+                      </div>`;
+    referencesContainer.insertAdjacentHTML('beforeend', newDomElement);
+  });
+});
+
 if(telephoneNumberSent) {
   node.innerHTML = "Skickat!";
 }

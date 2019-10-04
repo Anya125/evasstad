@@ -12,7 +12,7 @@
   text-align: center;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 992px) {
   .slideshow-container {
     display: none;
   }
@@ -193,6 +193,44 @@
   font-weight: 300;
   margin: 0;
 }
+
+/* Hero img + text mobile styling */
+
+.mobile-hero-img {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/mobile-header.jpg");
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-txt {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-txt h1,
+.hero-txt h4 {
+  font-weight: 300;
+}
+
+
+.mobile-hero-img {
+  display: none;
+}
+
+@media(max-width:768px) {
+  .mobile-hero-img {
+    display: block;
+  }
+}
+
 
 /* Om oss STYLING =================================== */
 .hem {
@@ -822,6 +860,7 @@ textarea:focus {
   .referenser-container1 {
     display: block;
   }
+
   .referenser-container1 .referenser-box {
     margin-top: 50px;
   }
@@ -1009,7 +1048,7 @@ textarea:focus {
 }
 
 .kontakt-box a,
-h4 {
+.kontakt-box h4 {
   text-decoration: none;
   color: black;
 }

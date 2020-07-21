@@ -350,6 +350,17 @@
   padding-bottom: 20px;
 }
 
+.tjanster-container3 {
+  width: 100%;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.tjanster-container3 h3 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
 @media (max-width:768px) {
   .tjanster-titel h3 {
     padding-bottom: 10px;
@@ -484,8 +495,6 @@
   width: 100%;
   justify-content: center;
   display: flex;
-  padding-left: 50px;
-  padding-right: 50px;
   padding-bottom: 50px;
 }
 
@@ -982,6 +991,10 @@ textarea:focus {
   width: 100%;
   text-align: center;
   padding-bottom: 50px;
+}
+
+.kontakt-title h4 {
+  padding-top: 50px;
 }
 
 @media (max-width: 786px) {
